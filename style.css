@@ -1,15 +1,45 @@
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 html {
     font-family: 'Dancing Script', cursive;
+    background-color: #f9f9f9;
 }
 
 header h1 {
     text-align: center;
-    margin: 1em;
-    font-size: 3rem;
+    margin: 1em auto;
+    font-size: 4rem;
+    animation: 3s ease-in fadeIn;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+}
+
+figure {
+    padding: 0.5em;
+}
+
+main figure img {
+    display: block;
+    max-width: 100%;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.2);
 }
